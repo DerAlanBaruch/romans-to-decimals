@@ -1,0 +1,146 @@
+.principal {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  background-color: #fdfcff;
+}
+
+h1,
+h3,
+p,
+label {
+  height: fit-content;
+  margin: 0;
+  color: #001d36;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #1a1c1e;
+  max-width: calc(100vw - 4em);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  height: 150px;
+  justify-content: center;
+}
+
+.input-group > input {
+  background-color: #dfe2eb;
+  border: none;
+  border-bottom: 1px solid #43474e;
+  padding: 1em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  height: 56px;
+  font-size: large;
+}
+
+.input-group > input:focus {
+  outline: none;
+  border-bottom: 3px solid #43474e;
+}
+
+.input-group > input::placeholder {
+  color: #43474e;
+  font-size: large;
+}
+
+.input-group > input.error::placeholder {
+  color: #ba1a1a !important;
+}
+
+.input-group > label {
+  color: #43474e;
+  font-size: small;
+  margin-bottom: 1em;
+}
+
+.input-group > button {
+  border: none;
+  background-color: #0061a4;
+  color: #ffffff;
+  font-size: large;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input.error {
+  border-bottom: 3px solid #ba1a1a !important;
+}
+
+label.error {
+  color: #ba1a1a !important;
+}
+
+.input-group > button:hover {
+  background-color: rgba(0, 97, 164, 0.92);
+}
+
+.alert {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  display: flex;
+  opacity: 1;
+  flex-direction: row;
+  background-color: #d1e4ff;
+  height: 72px;
+  align-items: center;
+  padding: 0 2em;
+  gap: 2em;
+  border-radius: 16px;
+}
+
+.alert.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.alert > p {
+  color: #001d36;
+}
+
+.alert > button {
+  border: none;
+  background-color: rgb(255, 255, 255, 0);
+  color: #43474e;
+  font-size: large;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #73777f;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.historial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - 4em);
+  gap: 1em;
+}
+
+.historial > p {
+  height: 32px;
+  border: 2px solid #73777f;
+  border-radius: 8px;
+  color: #1a1c1e;
+  padding: 0 16px;
+  line-height: 1.7;
+}
